@@ -119,11 +119,8 @@ contract RentingHouseContract{
 
         if(bytes(_locAddress).length != 0){
             property._locAddress = _locAddress;
-        }
-
-        //if(bytes(_type).length !=0){
-            property._type = _type;
-        //}
+        }        
+        property._type = _type;        
 
         if(bytes(comments).length !=0){
             property.comments = comments;
@@ -145,7 +142,7 @@ contract RentingHouseContract{
         require(isOwner(msg.sender), "Owner does not exist");
         require(properties[id]._status == Status.onRent, "Property is not available for rent now");
         require(tenants[msg.sender].rentedPropId == 0, "Tenant has already rented a prop");
-        require(leaseStart<leaseEnd, "End date does not early then Start date");
+        require(leaseStart<leaseEnd, "End date cannot be earlier then Start date");
 
         _counter.increment();
         uint counter = _counter.current();
