@@ -2,4 +2,10 @@
 
 Renting House Dapp Project
 
-Frontend will be updated...
+![home](firstfrontend.png)
+
+Frontend updated
+
+Some permission control problems and logic errors should be resolved
+
+
