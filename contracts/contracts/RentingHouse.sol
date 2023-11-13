@@ -224,5 +224,7 @@ contract RentingHouseContract{
         return _counter.current();
     }
 
+    //add other queries
+
     
 }
