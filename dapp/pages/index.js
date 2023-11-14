@@ -137,7 +137,7 @@ export default function Home() {
         <button className={styles.connectedButton} onClick={handleConnect}>{!isConnected ? "Connect" : "Connected"}</button>
       </div>
 
-      <h1>Renting DApp</h1>
+      <h1>Renting House DApp</h1>
       <div className={styles.line}>
         <h2>Add Owner and Show Owner</h2>
         <label>
